@@ -43,7 +43,7 @@ else
   os = option_os
 endif
 
-if os != 'Linux'
+if os != 'Linux' and os != 'GNU'
   kvm_dep = cc.find_library('kvm', required: true)
 else
   kvm_dep = []
